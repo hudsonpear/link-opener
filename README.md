@@ -18,6 +18,10 @@ Available for Windows
 
 [Download Latest Release](https://github.com/hudsonpear/link-opener/releases)
 
+## Screenshots
+
+![screenshot1](https://i.imgur.com/CbqvNN2.png)
+
 ## Usage
 
 1. Launch the app.
