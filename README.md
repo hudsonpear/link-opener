@@ -12,8 +12,6 @@
 | PDF | `.pdf` |
 | Plain text / markup | `.txt`, `.csv`, `.html`, `.htm`, `.md`, `.json`, `.xml`, `.yaml`, `.yml`, `.ini`, `.log`, `.css`, `.js`, `.ts`, `.rtf` |
 
-`.doc` extraction is best-effort (legacy binary format, no full parser — text is scraped from the raw stream, so formatting/tables are lost).
-
 ## Download
 
 Available for Windows
