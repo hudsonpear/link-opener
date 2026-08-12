@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Links from Files</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 5px;">
+            <span>Link Opener v1.0.4</span>
+            <span>made by: Hudson Pear (pyrus)</span>
+        </div>
+
+        <button id="selectFileBtn">Select File...</button>
+        <input type="text" id="fileInput">
+        <button id="openLinksBtn">Open Links</button>
+
+        <textarea id="debugConsole" readonly></textarea>
+
+        <div id="linksContainer">
+            <div id="linksControls">
+                <button id="selectAllBtn">Select All</button>
+                <button id="unselectAllBtn">Unselect All</button>
+                <button id="copySelectedBtn">Copy Selected</button>
+            </div>
+            <ul id="linksList"></ul>
+        </div>
+
+    </div>
+
+    <!-- Drag overlay -->
+    <div id="dragOverlay">
+        <div id="dragMessage">Drop file here</div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

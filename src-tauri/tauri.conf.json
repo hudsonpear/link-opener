@@ -1,0 +1,141 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "LinkOpener",
+  "version": "1.0.4",
+  "identifier": "com.linkopener.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Link Opener v1.0.4",
+        "width": 480,
+        "height": 505,
+        "resizable": true,
+        "maximizable": true,
+        "fullscreen": false,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "ext": ["txt"],
+        "name": "Text Document",
+        "description": "Plain Text File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["csv"],
+        "name": "CSV File",
+        "description": "Comma Separated Values File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["html", "htm"],
+        "name": "HTML Document",
+        "description": "HTML File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["pdf"],
+        "name": "PDF Document",
+        "description": "Portable Document Format",
+        "role": "Viewer"
+      },
+      {
+        "ext": ["docx", "doc"],
+        "name": "Word Document",
+        "description": "Microsoft Word Document",
+        "role": "Editor"
+      },
+      {
+        "ext": ["xlsx", "xls", "xlsm", "xlsb", "ods"],
+        "name": "Excel Spreadsheet",
+        "description": "Microsoft Excel Spreadsheet",
+        "role": "Editor"
+      },
+      {
+        "ext": ["pptx"],
+        "name": "PowerPoint Presentation",
+        "description": "Microsoft PowerPoint Presentation",
+        "role": "Viewer"
+      },
+      {
+        "ext": ["md"],
+        "name": "Markdown File",
+        "description": "Markdown Document",
+        "role": "Editor"
+      },
+      {
+        "ext": ["json"],
+        "name": "JSON File",
+        "description": "JSON Document",
+        "role": "Editor"
+      },
+      {
+        "ext": ["xml"],
+        "name": "XML File",
+        "description": "XML Document",
+        "role": "Editor"
+      },
+      {
+        "ext": ["yaml", "yml"],
+        "name": "YAML File",
+        "description": "YAML Document",
+        "role": "Editor"
+      },
+      {
+        "ext": ["ini"],
+        "name": "INI File",
+        "description": "Configuration File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["log"],
+        "name": "Log File",
+        "description": "Log File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["css"],
+        "name": "CSS File",
+        "description": "Stylesheet File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["js"],
+        "name": "JavaScript File",
+        "description": "JavaScript Source File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["ts"],
+        "name": "TypeScript File",
+        "description": "TypeScript Source File",
+        "role": "Editor"
+      },
+      {
+        "ext": ["rtf"],
+        "name": "Rich Text Format",
+        "description": "Rich Text File",
+        "role": "Editor"
+      }
+    ]
+  }
+}

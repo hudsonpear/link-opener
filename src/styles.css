@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, button, textarea {
+    padding: 8px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 4px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#debugConsole {
+    overflow: auto;
+    height: 97px;
+    word-wrap: normal;
+    white-space: pre;
+    font-family: monospace;
+}
+
+/* Drag overlay - hidden by default */
+#dragOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* semi-transparent black mask */
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* on top of everything */
+    border: 4px dashed #fff; /* dotted border around the window */
+    box-sizing: border-box;
+}
+
+/* Center message */
+#dragMessage {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#linksContainer {
+    display: none;
+}
+
+#openLinksBtn {
+    background-color: #3d3e9e;
+}
+#openLinksBtn:hover {
+    background-color: #5557c2;
+    cursor: pointer;
+}
